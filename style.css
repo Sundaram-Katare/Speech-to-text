@@ -1,0 +1,104 @@
+/* Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Agu+Display&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kaushan+Script&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Savate:ital,wght@0,200..900;1,200..900&display=swap');
+
+/* Root Theme Variables */
+:root {
+  --bg: #121212;
+  --fg: #fff;
+  --primary: #08ffd6;
+  --primary-dark: #1df3d3;
+  --canvas-bg: #1e1e1e;
+  --output-bg: #222;
+  --button-disabled: #fffbfb;
+}
+
+/* Light Mode Overrides */
+.light-mode {
+  --bg: #ffffff;
+  --fg: #000000;
+  --primary: #0eb6ea;
+  --primary-dark: #0eb6ea;
+  --canvas-bg: #f0f0f0;
+  --output-bg: #e0e0e0;
+  --button-disabled: #ccc;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  transition: var(--bg) 0.3s ease, color 0.3s ease;
+}
+
+#title {
+  font-family: 'Savate', sans-serif;
+  font-size: 65px;
+  margin-top: 1rem;
+  color: var(--primary);
+  font-weight: 900;
+  font-style: italic;
+}
+
+.container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+canvas {
+  width: 100%;
+  height: 100px;
+  background-color: var(--canvas-bg);
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.controls {
+  margin-bottom: 1.5rem;
+}
+
+button {
+  background-color: var(--primary);
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  color: black;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--primary-dark);
+}
+
+button:disabled {
+  background-color: var(--button-disabled);
+  cursor: not-allowed;
+}
+
+.output {
+  background: var(--output-bg);
+  padding: 1rem;
+  border-radius: 8px;
+  min-height: 100px;
+  transition: background-color 0.3s ease;
+}
+
+
+#toggleModeBtn {
+  margin-top: 10px;
+  color: black;
+  font-weight: 600;
+}
+
+#copyBtn {
+  background-color: rgb(7, 0, 149);
+  color: white;
+}

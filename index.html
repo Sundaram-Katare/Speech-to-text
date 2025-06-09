@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Speech To Text</title>
+</head>
+<body>
+    <button id="toggleModeBtn">Switch to Light Mode</button>
+    <div class="container">
+       <h1 id="title">Mic 2 Text</h1>
+       <h3>Speech to Text App</h3>
+       <canvas id="visualizer"></canvas>
+
+       <div class="controls">
+              <button id="startBtn">Start</button>
+              <button id="stopBtn">Stop</button>
+       </div>
+
+       <div class="output">
+        <h2>Transcription</h2>
+        <p id="transcript">...</p>
+        <br />
+        <button id="copyBtn">Copy Text</button>
+       </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
