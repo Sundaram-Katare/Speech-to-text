@@ -17,7 +17,7 @@ This is a real-time speech-to-text web application built using **pure HTML, CSS,
 ## 📸 Demo
 
 Live Demo: [Click here](#)  
-*(Replace this with your GitHub Pages or live deployment link)*
+*(https://speech-to-text-nine-plum.vercel.app/)*
 
 ---
 
@@ -37,3 +37,5 @@ Live Demo: [Click here](#)
    ```bash
    git clone  https://github.com/Sundaram-Katare/speech-to-text.git
    cd speech-to-text
+
+## ⭐ Give a Star, if you like the project
